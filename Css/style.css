@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;1,100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;1,100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,700;1,100&display=swap');
+
+input {
+  margin: 0;
+}
+.container {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+  width: 1440px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-evenly;
+  background-color: #f2f2f2;
+  align-items: center;
+  padding-bottom: 150px;
+}
+
+.img {
+  width: 500px;
+  height: 660px;
+  display: inline-block;
+  background-image: url(../img/guitar.png);
+  background-repeat: no-repeat;
+  background-size: 500px;
+  background-position: 10% 85%;
+}
+.panel {
+  display: inline-block;
+  width: 500px;
+  background: #fafafa;
+  margin-top: 80px;
+  border-radius: 20px;
+}
+
+.top-section {
+  padding: 40px 0px 70px 0;
+  display: flex;
+  justify-content: space-between;
+  font-size: 20px;
+}
+
+.top-name {
+  font-weight: 700;
+  font-size: 20px;
+  padding-right: 100px;
+}
+
+.top-language {
+  padding-left: 100px;
+  position: relative;
+  font-weight: 400;
+  padding-right: 40px;
+}
+
+.top-language::after {
+  content: '';
+  position: absolute;
+  top: 7px;
+  left: 225px;
+  border: solid black;
+  border-width: 0 2px 2px 0;
+  display: inline-block;
+  padding: 3px;
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+}
+
+.center-section h1,
+a,
+p {
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.sing-up {
+  text-decoration: none;
+  display: block;
+  width: 300px;
+  border-radius: 5px;
+  border: #c7aaac 2px solid;
+  padding: 7px 0 7px 0;
+  margin-top: 30px;
+  color: #e9b2b8;
+  position: relative;
+}
+
+.sing-up::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-420%, -50%);
+  width: 25px;
+  height: 25px;
+  background-image: url(../img/google-g-2015.svg);
+  background-repeat: no-repeat;
+}
+
+.sub-title {
+  margin: 20px 0;
+  color: #e9b2b8;
+}
+.form input {
+  display: block;
+  margin: 0 auto;
+  width: 260px;
+  padding: 10px 20px;
+  border: #e9b2b8 1px solid;
+  border-radius: 5px;
+}
+.form > input {
+  margin-bottom: 20px;
+}
+
+.reg {
+  text-decoration: none;
+  display: block;
+  width: 300px;
+  font-weight: 700;
+  border-radius: 5px;
+  background-color: #e8505c;
+  padding: 10px 0 10px 0;
+  margin-top: 20px;
+  color: #fff;
+  border: none;
+  margin: auto;
+  font-size: 15px;
+}
+
+.log-in {
+  margin: 30px 0;
+  font-weight: 400;
+  font-size: 14px;
+}
+.log-in-link {
+  display: inline;
+  text-decoration: none;
+  color: #e8505c;
+}
