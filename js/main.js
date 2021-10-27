@@ -1,7 +1,7 @@
 // Регулярный значения для проверки данних
-let regLogin = /^(?=.*[A-Za-z])(?=.*)[A-Za-z]{5,}$/;
+let regLogin = /^(?=.*[A-Za-z])(?=.*)[A-Za-z]{5,12}$/;
 let regEmail = /^([a-z0-9_-]+\.)*[a-z0-9_-]+@[a-z0-9_-]+(\.[a-z0-9_-]+)*\.[a-z]{2,6}$/
-let regPass = /^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{8,}$/;
+let regPass = /^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{8,12}$/;
 
 
 // Эллементы с которыми работаем
@@ -24,28 +24,28 @@ btn.addEventListener('click', (e) => {
 	e.preventDefault();
 	if (validete(regLogin,inputLogin)) {
 		errorLogin.classList.add('visible');
-		errorLogin.innerHTML = 'Логин должен содержать 5 и более латинских букв';
+		errorLogin.innerHTML = 'Minimum five, max twelve characters, only letters';
 	} else {
 		errorLogin.classList.remove('visible');
 		readyLogin = true;
 	}
 	if (validete(regEmail,inputEmail)) {
 		errorEmail.classList.add('visible');
-		errorEmail.innerHTML = `Введите корректный e-mail`;
+		errorEmail.innerHTML = `Enter the correct e-mail`;
 	} else {
 		errorEmail.classList.remove('visible');
 		readyEmail = true;
 	}
 	if (validete(regPass,inputPassword)) {
 		errorPass.classList.add('visible');
-		errorPass.innerHTML = `Пароль должен содержать 8 символов, большую букву и цифру`;
+		errorPass.innerHTML = `Minimum eight characters, max twelve,  at least one letter and one number`;
 	} else {
 		errorPass.classList.remove('visible');
 		readyPass = true;
 	}
 	if ( readyLogin && readyPass && regEmail ) {
 		readyForm.classList.add('visible')
-		readyForm.innerHTML = `Спасибо за регестрацию!`
+		readyForm.innerHTML = `Thank you for register`
 	}
 })
 
