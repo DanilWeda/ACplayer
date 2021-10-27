@@ -57,6 +57,7 @@ input {
 
 .top-language::after {
   content: '';
+  cursor: pointer;
   position: absolute;
   top: 7px;
   left: 225px;
@@ -65,7 +66,6 @@ input {
   display: inline-block;
   padding: 3px;
   transform: rotate(45deg);
-  -webkit-transform: rotate(45deg);
 }
 
 .center-section h1,
@@ -86,6 +86,11 @@ p {
   margin-top: 30px;
   color: #e9b2b8;
   position: relative;
+}
+
+.sing-up:hover {
+  border: #e8505c 2px solid;
+  color: #e8505c;
 }
 
 .sing-up::before {
@@ -123,12 +128,17 @@ p {
   font-weight: 700;
   border-radius: 5px;
   background-color: #e8505c;
+  border: 1px solid #e8505c;
   padding: 10px 0 10px 0;
   margin-top: 20px;
   color: #fff;
-  border: none;
   margin: auto;
   font-size: 15px;
+  cursor: pointer;
+}
+
+.reg:hover {
+  border: 1px solid #e9b2b8;
 }
 
 .log-in {
@@ -140,4 +150,8 @@ p {
   display: inline;
   text-decoration: none;
   color: #e8505c;
+}
+
+.log-in-link:hover {
+  color: #e9b2b8;
 }
